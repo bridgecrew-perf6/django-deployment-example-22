@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+    {%block body_block%}
+    <h1>Welcome to our new INDEX page!</h1>
+    <h2>This is index.html page showing!<h2>
+        {{ text | upper}} # This makes it uppercase <br>
+        {{ text | cut:"Hello"}} # This cuts out hello <br>
+        {{ number | add:"99" }} # This adds 99 <br>
+    {% endblock %}
